@@ -5,7 +5,7 @@ export default function Photo(props) {
 
     return (
         <div>
-            Photo
+            {photo}
         </div>
     )
 }

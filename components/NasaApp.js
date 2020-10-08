@@ -15,7 +15,7 @@ https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&
 
 export default function NasaApp() {
     const [weather, setWeather] = useState([])
-    const [photos, setPhotos] = useState([])
+    const [photos, setPhotos] = useState(["img1", "img2", "img3"])
 
     useEffect(() => {
         axios.get(`https://api.nasa.gov/insight_weather/?api_key=${API_KEY}&feedtype=json&ver=1.0`)
@@ -34,7 +34,7 @@ export default function NasaApp() {
     return (
         <div>
             <Header />
-            <Body weather={ weather } />
+            <Body weather={ weather } photos={ photos }/>
             <Footer />
         </div>
     )

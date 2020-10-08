@@ -9,7 +9,10 @@ export default function Photos(props) {
         <div>
             Photos 
             {/* forEach */}
-            <Photo />
+            {photos.map(photo => {
+                return <Photo photo={ photo } />
+            })}
+            {/* <Photo /> */}
         </div>
     )
 }
