@@ -11,7 +11,7 @@ export default function Body(props) {
         <div>
             Body (Where the sections go)
             {keys.map(key => {
-                return <Section photos={ photos } locations={ keys } weather={ weather[key] } />
+                return <Section photos={ photos } locations={ keys } location={ key } weather={ weather[key] } />
             })}
         </div>
     )

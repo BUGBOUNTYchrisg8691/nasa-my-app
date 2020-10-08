@@ -12,8 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0",
+    "bootstrap": "^4.5.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "reactstrap": "^8.6.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
