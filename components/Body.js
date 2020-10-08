@@ -1,12 +1,18 @@
 import React from "react"
 
-import Card from "./Card"
+import Section from "./Section"
 
-export default function Body() {
+export default function Body(props) {
+    const { weather, photos } = props
+
+    const keys = Object.keys(weather).splice(0, 7)
+
     return (
         <div>
-            Body (Where the cards go)
-            <Card />
+            Body (Where the sections go)
+            {keys.map(key => {
+                return <Section photos={ photos } locations={ keys } weather={ weather[key] } />
+            })}
         </div>
     )
 }

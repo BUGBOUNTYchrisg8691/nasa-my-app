@@ -5,7 +5,7 @@ import Nav from "./Utils/Nav"
 export default function Footer() {
     return (
         <div>
-            Footer (which will include the nav)
+            Footer
             <Nav />
         </div>
     )

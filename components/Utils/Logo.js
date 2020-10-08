@@ -3,7 +3,7 @@ import React from 'react'
 export default function Logo() {
     return (
         <div>
-            A Logo 
+            <h1 className="heading">My NASA App - Martian Weather</h1>
         </div>
     )
 }

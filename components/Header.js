@@ -6,7 +6,7 @@ import Logo from "./Utils/Logo"
 export default function Header() {
     return (
         <div>
-            Header (which will include a logo and a nav)
+            Header
             <Logo />
             <Nav /> 
         </div>

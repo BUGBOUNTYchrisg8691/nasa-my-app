@@ -3,7 +3,9 @@ import React from 'react'
 export default function Nav() {
     return (
         <div>
-            A Nav 
+            <a>Home</a>
+            <a>Photos</a>
+            <a>About</a>
         </div>
     )
 }
